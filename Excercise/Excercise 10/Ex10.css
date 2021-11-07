@@ -1,0 +1,25 @@
+        table,
+    th,
+    td {
+        border: 1px solid violet;
+        border-collapse: collapse;
+    }
+    
+    td.background2 {
+        background-color: #ffbbbb;
+        color: red;
+        text-align: center;
+    }
+    
+    td.background1 {
+        background-color: red;
+        color: white;
+        text-align: right;
+    }
+    
+    td.image {
+        width: 70px;
+        padding: 10px 10px 15px 10px;
+        /* max-width: 54px;
+    max-height: 81px;
+} */

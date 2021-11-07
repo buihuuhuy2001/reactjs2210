@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và các điều khiển trên form </title>
+    <link rel="stylesheet" href="./Ex11.css">
+</head>
+
+<body>
+    <h2>Đăng nhập</h2>
+    <form onsubmit="return false">
+        <table>
+            <tr>
+                <td class="padding-right20px"><label for="username">Mã người dùng </label> </td>
+                <td class="padding-right20px"><input type="text" id="username" name="username" placeholder="default" /><br/></td>
+            </tr>
+            <tr>
+                <td class="padding-right20px"><label for="password">Mật khẩu </label></td>
+                <td class="padding-right20px"><input type="text" id="password" name="password" /> <br/></td>
+            </tr>
+            <tr>
+                <td class="mid" colspan="2"><button onclick="myFunction()">Đăng nhập</button></td>
+            </tr>
+            <tr>
+                <td class="mid" colspan="2"><span id="demo"></span></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script>
+    function myFunction(e) {
+        document.getElementById("demo").innerHTML = "default";
+        e.preventDefault();
+    }
+</script>
+
+</html>

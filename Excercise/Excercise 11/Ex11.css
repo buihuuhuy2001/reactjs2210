@@ -1,0 +1,23 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+h2 {
+    text-align: center;
+    color: #FFA500;
+}
+
+table {
+    background-color: #ADD8E6;
+}
+
+td.mid {
+    text-align: center;
+}
+
+td.padding-right20px {
+    padding-right: 20px;
+}

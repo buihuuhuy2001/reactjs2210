@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Ex12.css">
+</head>
+
+<body>
+    <h2>Phiếu đăng ký tham gia chương trình khuyễn mãi</h2>
+    <form onsubmit="return false">
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td><label for="fullname"></label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Nhập tên"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><label for="address">
+                    <input type="text" id="address" name="address" placeholder="Nhập địa chỉ" ></td>
+            </tr>
+            <tr>
+                <td>Số điện thoại</td>
+                <td>
+                <label for="phonenumber">
+                    <input type="text" id="phonenumber" name="phonebumber" maxlength="10" placeholder="Nhập số điện thoại" pattern="[0-9]{10}"></td>                  
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input name="gender" value="male" type="radio">
+                    <label for="male">Nam</label>
+                    <input name="gender" value="female" type="radio">
+                    <label for="female">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td>
+                    <select name="job" id="">
+                        <option value="BacSi">Bác Sĩ</option>
+                        <option value="Kysu">Ký sư</option>
+                        <option value="GiaoVien">Giáo viên</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn sản phẩm tham gia</td>
+                <td>
+                    <select name="item" id="">
+                        <option value="Kemdanhrang">Kem đánh răng</option>
+                        <option value="Botgiat">Bột giặt</option>
+                        <option value="Daugoidau">Dầu gội đầu</option>
+                        <option value="Suatan">Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Số người dự đoán tham gia</td>
+                <td>
+                    <label for="numpp"></label>
+                    <input type="text" name="numpp" id="numpp" placeholder="Nhập số người">
+                </td>
+            </tr>
+            <tr>
+                <td class="mid" colspan="2"><button onclick="myFunction()">Đăng nhập</button></td>
+            </tr>
+            <tr>
+                <td class="mid" colspan="2"><span class="red-text" id="demo"></span></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script>
+    function myFunction(e) {
+        document.getElementById("demo").innerHTML = "Bạn đã đăng ký thành công";
+        e.preventDefault();
+    }
+</script>
+
+</html>
